@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granja de Retiro "Sal y Luz"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1 class="titulo-principal">Granja de Retiro "Sal y Luz"</h1>
+            <input type="text" placeholder="Search" name="query" class="search">
+            <button class="btn">Login</button>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="flex-container">
+
+        <!-- left column -->
+        <div class="col-l">
+            <video src="assets/obeja.mp4" height="400" muted loop onmouseover="playVideo(this)"
+                onmouseout="pauseVideo(this)"></video>
+
+            <!-- video info -->
+            <div class="row">
+                <div class="start">
+                    <h1>Puedes conectarte con tu creador a traves de la naturaleza</h1>
+                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <div class="user">
+                        <img src="assets/user.png" alt="atencion-al-cliente" class="avatar-s">
+                        <span class="user-name">Ponte en contacto con nosotros</span>
+                    </div>
+                </div>
+                <button class="btn">Subscribe</button>
+            </div>
+            <h1>Formulario de Registro</h1>
+                <form action="/process" method="post">
+                    <div>
+                        <label>Nombre * </label>
+                        <input type="text" name="name" placeholder="Tu nombre.." required>
+                    </div>
+                    <div>
+                        <label>Apellido *</label>
+                        <input type="text" name="name" placeholder="Tu Apellido...." required>
+                    </div>
+                    <div>
+                        <label>Email:* </label>
+                        <input type="text" name="email" placeholder="Tu email..." required>
+                    </div>
+                    <div>
+                        <label>Contraseña*</label>
+                        <input type="password" name="password" placeholder="Tu contraseña" required>
+                    </div>
+                    <div>
+                        <label>Confirma tu contraseña *</label>
+                        <input type="password" name="password" placeholder="Confirma tu contraseña" required>
+                    </div>
+                    <div>
+                        <label>Fecha de Nacimiento</label>
+                        <input type="date" name="dob">
+                    </div>
+                    <div>
+                        <h3>Una breve descripción de ti:</h3>
+                        <textarea name="comment" cols="20" rows="3"></textarea>
+                    </div>
+
+        </div>
+
+        <!-- right column -->
+        <div class="col-r">
+
+            <h3 class="sub-header">Up Next</h3>
+
+            <div class="video-small">
+                <video src="assets/perro jugando con humano.mp4" class="conten-vid" muted loop
+                    onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Conoce su fidelidad</span>
+            </div>
+
+            <div class="video-small">
+                <video src="assets/vaca siendo mimada.mp4" class="conten-vid" muted loop onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Experimenta de su amor</span>
+            </div>
+
+            <div class="video-small">
+                <video src="assets/caballo trotando.mp4" class="conten-vid" muted loop onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Conoce de su fuerza y majestad</span>
+            </div>
+
+            <div class="video-small">
+                <video src="assets/gallina.mp4" class="conten-vid" muted loop onmouseover="playVideo(this)"
+                    onmouseout="pauseVideo(this)"></video>
+                <span class="video-title">Y entiende que ÉL te tiene bajo sus alas</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
